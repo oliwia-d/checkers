@@ -15,9 +15,6 @@ hs_err_pid*
 bin/
 build/
 .gradle/
-gradle/
-gradlew
-gradlew.bat
 gradle-app.setting
 !gradle-wrapper.jar
 
