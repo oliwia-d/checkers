@@ -1,18 +1,17 @@
 package com.akame.checkers;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/view/main/mainScene.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+    public void start(Stage primaryStage) {
+        Game game = new Game();
+        Scene scene = new Scene(game.createContent());
+        primaryStage.setTitle("Checkers");
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
