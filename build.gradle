@@ -12,7 +12,7 @@ group = 'com.akame'
 mainClassName = "com.akame.checkers.Main"
 
 javafx {
-    version = "13"
+    version = "13.0.2"
     modules = ['javafx.controls', 'javafx.fxml']
 }
 
